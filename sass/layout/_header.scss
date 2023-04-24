@@ -1,0 +1,26 @@
+.main {
+  &__header {
+    background: #1e1e1e;
+    &-leftBg {
+      height: 50vh;
+      background: url(../../images/pictures/bg-left.png) no-repeat;
+      background-position: 0;
+    }
+    &-rightBg {
+      height: 50vh;
+      background: url(../../images/pictures/bg-left.png) no-repeat;
+      background-position-x: 100;
+    }
+    &-nav {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      &-logo {
+      }
+      &-lists {
+        display: flex;
+      }
+    }
+  }
+}
