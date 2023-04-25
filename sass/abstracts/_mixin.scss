@@ -1,0 +1,17 @@
+@mixin flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-column-center {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+@mixin btn {
+  padding: 16px 33px;
+  border-radius: 36px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}

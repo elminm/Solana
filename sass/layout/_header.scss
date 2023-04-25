@@ -1,25 +1,88 @@
 .main {
   &__header {
+    color: #fff;
     background: #1e1e1e;
-    &-leftBg {
-      height: 50vh;
-      background: url(../../images/pictures/bg-left.png) no-repeat;
-      background-position: 0;
-    }
-    &-rightBg {
-      height: 50vh;
-      background: url(../../images/pictures/bg-left.png) no-repeat;
-      background-position-x: 100;
-    }
+    position: relative;
+    min-height: 100vh;
+    background: url(../../images/pictures/div.hero_content.png) no-repeat
+      #000000;
+    background-size: cover;
+    background-position-y: -50px;
     &-nav {
-      width: 80%;
-      margin: 0 auto;
+      background-color: #0000005b;
+      height: 67px;
       display: flex;
-      justify-content: space-between;
-      &-logo {
+      align-items: center;
+      margin-bottom: 10rem;
+      &-container {
+        width: 80%;
+        margin: 0 auto;
+        @include flex-between-center;
+
+        &-lists {
+          display: flex;
+          li {
+            &:not(:last-child) {
+              margin-right: 37px;
+            }
+            a {
+              color: #848895;
+            }
+          }
+        }
       }
-      &-lists {
+    }
+    &-title {
+      @include flex-column-center;
+      &-header {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 70px;
+        line-height: 76px;
+      }
+      h2 {
+        @extend .main__header-title-header;
+        margin-bottom: 55px;
+      }
+      p {
+        width: 600px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 27px;
+        margin-bottom: 48px;
+        text-align: center;
+      }
+      &-btns {
+        margin-bottom: 70px;
+        button {
+          @include btn;
+          &:first-child {
+            background: $btn-gradient;
+            margin-right: 16px;
+          }
+          &:nth-child(2) {
+            background: #000000;
+            border: 1px solid #ffffff;
+          }
+        }
+      }
+      a {
+        display: block;
+        color: $link-color;
+        margin-bottom: 30px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 17px;
+      }
+      &-partners {
         display: flex;
+        align-items: center;
+        margin-bottom: 10rem;
+        &-partner:not(:last-child) {
+          margin-right: 40px;
+        }
       }
     }
   }

@@ -1,0 +1,42 @@
+.main {
+  &__community {
+    color: #fff;
+    min-height: 150vh;
+    background: url(../../div.community.png) no-repeat #000000;
+    background-size: cover;
+    background-position: center;
+    &-desc {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      h2 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 46px;
+        align-self: flex-start;
+      }
+      &-count {
+        margin-left: 25rem;
+        h2 {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 101px;
+          line-height: 132px;
+          background: linear-gradient(261.81deg, #19fb9b -8.01%, #8c01fa 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        P {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 27px;
+          color: #c4c4c4 !important;
+        }
+      }
+    }
+  }
+}
