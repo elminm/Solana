@@ -3,7 +3,6 @@
     color: #fff;
     background: #1e1e1e;
     position: relative;
-    min-height: 100vh;
     background: url(../../images/pictures/div.hero_content.png) no-repeat
       #000000;
     background-size: cover;
@@ -39,6 +38,7 @@
         font-weight: 400;
         font-size: 70px;
         line-height: 76px;
+        text-align: center;
       }
       h2 {
         @extend .main__header-title-header;
